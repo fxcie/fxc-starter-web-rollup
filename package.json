@@ -1,0 +1,25 @@
+{
+  "name": "fxc-starter-web-rollup",
+  "version": "0.0.1",
+  "description": "FXC Starter Project for Web using Rollup",
+  "main": "dist/index.js",
+  "scripts": {
+    "postinstall": "npx rollup -c",
+    "build": "npx rollup -c",
+    "deploy": "cp dist/index.js public/index.js",
+    "test": "npx mocha"
+  },
+  "keywords": [
+    "fxc",
+    "starter",
+    "web",
+    "rollup"
+  ],
+  "author": "Francis Carelse",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "*",
+    "@rollup/plugin-json": "*",
+    "@rollup/plugin-node-resolve": "*"
+  }
+}
